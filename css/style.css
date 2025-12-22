@@ -1,0 +1,287 @@
+/* 
+ #202846 - основний колір тексту білий
+ #FFFFFF - другорядний колір тексту
+#323236 - text form
+*/
+
+:root {
+  --font-family: "PT Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* прибираємо зайвий заголовок з головної сторінки */
+.none {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 80%;
+  max-width: 1485px;
+  margin: 0 auto;
+  background-color: #657572;
+}
+
+body {
+  font-family: var(--font-family);
+  color: #202846;
+  background-color: #bdbdc6;
+}
+
+header,
+footer {
+  width: 100%;
+  max-width: 1920px;
+  height: 90px;
+  background-color: #202846;
+}
+
+footer {
+  display: flex;
+  font-family: var(--font-family);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  color: #eeecf1;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+}
+
+.nav > img {
+  display: block;
+  margin-left: 90px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .link {
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.site-nav li {
+  min-width: 193px;
+  min-width: 210px;
+  min-height: 60px;
+  text-align: center;
+  border-right: 1px solid #ffffff;
+  padding-right: 20px;
+}
+
+.hero {
+  background-image: url("/images/hero.jpg");
+  height: 369px;
+  margin-top: 53px;
+  margin-bottom: 53px;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 75px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-text {
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.our-houses {
+  background-image: url("/images/house-1.jpg");
+  height: 604px;
+}
+
+.our-houses-text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.our-houses-link {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  width: 245px;
+  height: 68px;
+  background-color: #202846;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.arrow {
+  display: inline-block;
+  width: 36px;
+}
+
+.our-proposals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  background-color: #c1c1c3;
+  height: 412px;
+  margin-top: 49px;
+  margin-bottom: 49px;
+}
+
+.our-proposals-description {
+  max-width: 632px;
+  min-height: 349px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 26px;
+  text-align: center;
+  color: #202846;
+}
+
+.header-main {
+  background-color: #c6c6dc;
+}
+
+.our-company {
+  background-image: url("/images/holiday-time.jpg");
+}
+
+.page-title {
+  font-family: var(--font-family);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 48px;
+  color: #202846;
+}
+
+.our-company-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: #fff;
+}
+
+.our-company-text {
+  font-style: italic;
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+.about-us {
+  min-height: 380px;
+  background-color: #cbcbcb;
+}
+
+.about-us-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 30px;
+  color: #202846;
+}
+
+/* CONTACTS */
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 32px;
+  text-align: left;
+  color: #000;
+}
+
+.address .link {
+  color: inherit;
+  border-top: 3px solid #202846;
+}
+
+/* RESERVETION */
+
+.list-houses .item {
+  display: flex;
+  background-color: #767695;
+}
+
+.house-title {
+  font-family: var(--font-family);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #353c57;
+}
+
+.house-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  color: #202846;
+  background-color: #bdbdc6;
+}
+
+.btn-more-details {
+  width: 200px;
+  height: 60px;
+  background-color: #202846;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
