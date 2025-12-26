@@ -10,32 +10,51 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <nav class="nav">
-        <img src="./images/logo.svg" alt="логотип компанії" width="178" id="logo"/>
-        <ul class="site-nav">
+      <div class="container container-header">
+        <nav class="nav">
+        <img
+          src="./images/logo.svg"
+          alt="логотип компанії"
+          width="178"
+          id="logo"
+        />
+        <ul class="site-nav list">
           <li><a href="./index.html" class="link">Головна</a></li>
           <li><a href="./about-us.html" class="link">Про нас</a></li>
           <li><a href="./reservation.html" class="link">Забронювати</a></li>
           <li><a href="./contacts.html" class="link">Контакти</a></li>
-          <li><a href="" class="link">Особистий кабінет</a></li>
+          <li><a href="" class="link">Особистий<br>кабінет</a></li>
         </ul>
       </nav>
+      </div>
     </header>
     <main>
-      <section class="hero">
+      <div class="container">
+        <section class="hero">
         <h1 class="hero-title">HolidayTime</h1>
         <p class="hero-text">
           Автентичний відпочинок серед українського колориту!
         </p>
       </section>
-      <section class="our-houses">
+      </div>
+     <div class="container">
+       <section class="our-houses">
         <h2 class="our-houses-title none">Наші будинки</h2>
         <div>
-          <a href="" class="our-houses-link">Переглянути<img src="./images/arrow.svg" alt="arrow" class="arrow"></a>
+          <a href="" class="our-houses-link button"
+            >Переглянути<span class="span-arrow"><img src="./images/arrow.svg" alt="arrow" class="arrow"
+          /></a>
           <p class="our-houses-text">
             Полонини Карпат, у селі Орів посеред гір розташувався затишний
             куточок для незабутніх вражень. Справжні українські гори,
@@ -44,7 +63,9 @@
           </p>
         </div>
       </section>
-      <section class="our-proposals">
+     </div>
+      <div class="container">
+        <section class="our-proposals">
         <h2 class="our-proposals-title none">Наші пропозиції</h2>
         <img
           src="./images/recreation.jpg"
@@ -59,12 +80,13 @@
           </p>
         </div>
       </section>
-      <form action="submit">
-
-      </form>
+      </div>
+      <form action="submit"></form>
     </main>
     <footer>
-        <p class="copyright">&copy 2025 HolidayTime.  All rights reserved.</p>
+      <div class="container container-header">
+              <p class="copyright">&copy 2025 HolidayTime. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
