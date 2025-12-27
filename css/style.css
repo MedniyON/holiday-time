@@ -52,6 +52,10 @@ img {
   height: auto;
 }
 
+.list {
+  list-style: none;
+}
+
 .container {
   max-width: 1510px;
   padding-left: 10px;
@@ -61,9 +65,12 @@ img {
 }
 
 .container-header {
+  display: flex;
+  align-items: center;
+  height: 100%;
   padding-left: 15px;
   padding-right: 15px;
-} 
+}
 
 /* прибираємо зайвий заголовок з головної сторінки */
 .none {
@@ -80,11 +87,6 @@ img {
 ul {
   margin: 0;
   padding: 0;
-  /* list-style: none; */
-}
-
-.list {
-  list-style: none;
 }
 
 section {
@@ -102,7 +104,6 @@ footer {
   background-color: var(--header-bg-color);
 }
 
-
 footer {
   font-style: italic;
   font-size: 36px;
@@ -110,8 +111,6 @@ footer {
 }
 
 /* HEADER */
-
-
 
 .nav {
   display: flex;
@@ -131,9 +130,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 90px;
   padding: 0 25px;
+
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 24px;
@@ -158,18 +157,20 @@ footer {
 }
 
 .hero {
-  background-image: url("/images/hero.jpg");
   min-height: 369px;
   margin-top: 53px;
   margin-bottom: 53px;
   padding-top: 115px;
+
+  background-image: url("/images/hero.jpg");
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-size: 75px;
   text-align: center;
   color: var(--secondary-text-color);
-  margin-bottom: 30px;
 }
 
 .hero-text {
@@ -180,20 +181,22 @@ footer {
 }
 
 .our-houses {
-  background-image: url("/images/house-1.jpg");
   min-height: 604px;
   margin-bottom: 18px;
+
+  background-image: url("/images/house-1.jpg");
 }
 
 .our-houses-text {
   display: inline-block;
   max-width: 1160px;
   min-height: 170px;
-
   padding: 35px 25px;
+
   font-style: italic;
   font-size: 24px;
   background-color: var(--form-bg-color);
+
   opacity: 0.8;
 }
 
@@ -202,9 +205,9 @@ footer {
 
 .button {
   display: inline-block;
-
   min-width: 245px;
   height: 68px;
+  padding: 17px 30px;
 
   background-color: var(--header-bg-color);
 
@@ -212,7 +215,6 @@ footer {
   text-align: center;
   text-decoration: none;
   color: var(--secondary-text-color);
-  padding: 17px 30px;
 
   border-radius: 38.72px / 34px;
 }
@@ -231,9 +233,13 @@ footer {
 .our-proposals {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   gap: 18px;
-  height: 412px;
   margin-bottom: 18px;
+  padding-top: 47px;
+  padding-bottom: 47px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .our-proposals-description {
@@ -244,24 +250,28 @@ footer {
   min-height: 349px;
   padding-left: 10px;
   padding-right: 10px;
+
   font-size: 26px;
   text-align: center;
   background-color: var(--page-bg-color);
 }
 
 .header-main {
+  margin-bottom: 50px;
+  min-height: 140px;
   background-color: var(--secondary-header-bg-color);
 }
 
 .our-company {
+  margin-bottom: 30px;
   min-height: 227px;
   background-image: url("/images/holiday-time.jpg");
 }
 
-/* 111111 */
+/* about us */
 
 .header-main .container {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   align-items: center;
 }
@@ -271,9 +281,13 @@ footer {
   font-style: italic;
   font-weight: 400;
   font-size: 48px;
-    /* vertical-align: middle; */
 }
 
+.our-company {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .our-company-title {
   font-size: 48px;
@@ -289,16 +303,17 @@ footer {
 }
 
 .about-us {
-  min-height: 380px;
+  height: 380px;
+  margin-bottom: 30px;
 }
 
 .about-us-descriptiion {
-  padding: 30px, 0px;
-}
-
-.about-us p {
-  display: block;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 70px;
+  padding-right: 70px;
   font-size: 30px;
 }
 
@@ -309,9 +324,15 @@ footer {
 
 /* CONTACTS */
 
+.header-main-contact {
+  margin-bottom: 0;
+}
+
 .contact-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 600px;
 }
 
 .address {
@@ -328,22 +349,52 @@ footer {
 
 /* RESERVETION */
 
+.find-houses {
+  background-color: var(--page-bg-color);
+  margin-bottom: 90px;
+}
+
 .list-houses .item {
   display: flex;
+  min-height: 300px;
   background-color: var(--section-bg-color);
+}
+
+.list-houses .item + .item {
+  margin-top: 36px;
+}
+
+.card {
+  width: 712px;
+  height: 244px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .house-title {
   font-style: italic;
   font-size: 36px;
-  text-align: center;
   color: var(--primary-text-color);
 }
 
-.house-text {
+.house-photo {
+  height: 244px;
+}
+
+.house-description {
+  display: flex;
+  align-items: center;
+  height: 184px;
+  padding-left: 50px;
+  padding-right: 50px;
   font-size: 22px;
   text-align: center;
   background-color: var(--page-bg-color);
+}
+
+.house-text {
 }
 
 /* .btn-more-details {
