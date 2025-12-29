@@ -162,7 +162,7 @@ footer {
   margin-bottom: 53px;
   padding-top: 115px;
 
-  background-image: url("/images/hero.jpg");
+  background-image: url("../images/hero.jpg");
 }
 
 .hero-title {
@@ -184,7 +184,7 @@ footer {
   min-height: 604px;
   margin-bottom: 18px;
 
-  background-image: url("/images/house-1.jpg");
+  background-image: url("../images/house-1.jpg");
 }
 
 .our-houses-text {
@@ -263,9 +263,6 @@ footer {
 }
 
 .our-company {
-  margin-bottom: 30px;
-  min-height: 227px;
-  background-image: url("/images/holiday-time.jpg");
 }
 
 /* about us */
@@ -287,12 +284,18 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  margin-bottom: 30px;
+  min-height: 227px;
+  background-color: var(--header-bg-coloreader-bg-color);
+  background-image: url("../images/holiday-time.jpg");
 }
 
 .our-company-title {
   font-size: 48px;
   text-align: center;
   color: var(--secondary-text-color);
+  -webkit-text-stroke: 2px var(--primary-text-color);
 }
 
 .our-company-text {
