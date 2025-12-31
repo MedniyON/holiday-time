@@ -80,6 +80,9 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -181,13 +184,18 @@ footer {
 }
 
 .our-houses {
+  position: relative;
   min-height: 604px;
   margin-bottom: 18px;
 
   background-image: url("../images/house-1.jpg");
 }
 
+
 .our-houses-text {
+ position: absolute;
+ left: 0;
+ bottom: 30px;
   display: inline-block;
   max-width: 1160px;
   min-height: 170px;
@@ -200,6 +208,14 @@ footer {
   opacity: 0.8;
 }
 
+.our-houses-link {
+  position: absolute;
+  left: 911px;
+  bottom: 167px;
+
+  z-index: 1;
+}
+
 .our-houses-link::after {
   content: "";
   width: 36px;
@@ -210,6 +226,7 @@ footer {
 
 .button {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   min-width: 245px;
   height: 68px;
@@ -218,23 +235,11 @@ footer {
   background-color: var(--header-bg-color);
 
   font-size: 24px;
-  text-align: center;
   text-decoration: none;
   color: var(--secondary-text-color);
 
   border-radius: 38.72px / 34px;
 }
-
-/* .arrow {
-  display: inline-block;
-  width: 36px;
-  margin-left: 11px;
-}
-
-.span-arrow {
-  display: inline-block;
-  vertical-align: middle;
-} */
 
 .our-proposals {
   display: flex;
@@ -361,13 +366,24 @@ footer {
 }
 
 .list-houses .item {
+  position: relative;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   min-height: 300px;
   background-color: var(--section-bg-color);
 }
 
 .list-houses .item + .item {
   margin-top: 36px;
+}
+
+.btn-more-details {
+  position: absolute;
+  right: -30px;
+  bottom: -20px;
+
+  cursor: pointer;
 }
 
 .card {
@@ -400,15 +416,5 @@ footer {
   background-color: var(--page-bg-color);
 }
 
-.house-text {
-}
 
-/* .btn-more-details {
-  width: 200px;
-  height: 60px;
-  background-color: #202846;
-  font-family: inherit;
-  font-size: 24px;
-  text-align: center;
-  color: #fff;
-} */
+
