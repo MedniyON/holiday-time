@@ -73,7 +73,7 @@ img {
 }
 
 /* прибираємо зайвий заголовок з головної сторінки */
-.none {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -142,6 +142,8 @@ footer {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+
+  transition: background-color 250ms ease, color 250ms ease; 
 }
 
 .site-nav .link:hover,
@@ -151,7 +153,7 @@ footer {
 }
 
 .site-nav li {
-  min-width: 200px;
+  min-width: auto;
   border-right: 3px solid var(--secondary-text-color);
 }
 
@@ -241,6 +243,7 @@ footer {
   border-radius: 38.72px / 34px;
 }
 
+
 .our-proposals {
   display: flex;
   flex-wrap: wrap;
@@ -267,7 +270,7 @@ footer {
   background-color: var(--page-bg-color);
 }
 
-.header-main {
+.page-header {
   margin-bottom: 50px;
   min-height: 140px;
   background-color: var(--secondary-header-bg-color);
@@ -275,7 +278,7 @@ footer {
 
 /* about us */
 
-.header-main .container {
+.page-header .container {
   min-height: 100%;
   display: flex;
   align-items: center;
@@ -295,7 +298,7 @@ footer {
 
   margin-bottom: 30px;
   min-height: 227px;
-  background-color: var(--header-bg-coloreader-bg-color);
+  background-color: var(--header-bg-color);
   background-image: url("../images/holiday-time.jpg");
 }
 
@@ -335,7 +338,7 @@ footer {
 
 /* CONTACTS */
 
-.header-main-contact {
+.page-header-contact {
   margin-bottom: 0;
 }
 
