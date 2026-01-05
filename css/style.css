@@ -386,19 +386,23 @@ footer {
   margin-bottom: 30px;
 }
 
-.about-us-descriptiion {
+.about-us-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  min-height: 100%;
   padding-left: 70px;
   padding-right: 70px;
   font-size: 30px;
+  text-align: justify;
 }
 
-.about-us p:not(:first-child) {
-  margin-top: 30px;
-  margin-bottom: 0px;
+.about-us-text {
+}
+
+.about-us-text:not(:last-child) {
+  margin-bottom: 30px;
+  margin-top: 0;
 }
 
 /* CONTACTS */
@@ -484,4 +488,136 @@ footer {
   font-size: 22px;
   text-align: center;
   background-color: var(--page-bg-color);
+}
+
+/* BOOKING HOUSE */
+
+.house {
+  position: relative;
+
+  min-height: 665px;
+
+  margin-bottom: 36px;
+}
+
+.house-group-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.house-group-1 img:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.house-group-2 {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.house-group-2 img:last-child {
+  margin-left: 10px;
+}
+
+.house-description-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 870px;
+  justify-content: start;
+  padding-top: 25px;
+}
+
+/* Check Availability */
+
+.booking {
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.booking-title {
+  font-size: 48px;
+  font-weight: 700;
+
+  text-align: center;
+
+  margin-bottom: 36px;
+}
+
+.booking__form {
+  position: relative;
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: 30px;
+  padding-bottom: 28px;
+  font-size: 30px;
+}
+
+.booking-description {
+  margin-bottom: 25px;
+}
+
+.form-date {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.booking__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-date .booking__field + .booking__field {
+  margin-left: 100px;
+}
+
+.form-date label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-date input {
+  min-width: 350px;
+  min-height: 62px;
+  padding: 10px;
+
+}
+
+.form-cout {
+  display: flex;
+}
+
+.form-cout .booking__field {
+  flex-direction: row;
+}
+
+.form-cout input {
+  max-width: 70px;
+  padding: 5px;
+  margin-left: 15px;
+
+  text-align: center;
+}
+
+.form-cout .booking__field + .booking__field {
+  margin-left: 30px;
+}
+
+.booking__submit {
+  position: absolute;
+  bottom: 50%;
+  right: 110px;
+  transform: translateY(50%);
+  max-width: 350px;
+  min-height: 112px;
+
+  border: none;
+  border-radius: 5px;
+  background-color: var(--header-bg-color);
+  color: var(--secondary-text-color);
 }

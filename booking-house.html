@@ -20,37 +20,107 @@
         <link rel="stylesheet" href="./css/style.css" />
       </head>
       <body>
-        <header>
-          <div class="container container-header">
-            <nav class="nav">
-              <img
-                src="./images/logo.svg"
-                alt="логотип компанії"
-                width="178"
-                id="logo"
-              />
-              <ul class="site-nav list">
-                <li><a href="./index.html" class="link">Головна</a></li>
-                <li><a href="./about-us.html" class="link">Про нас</a></li>
-                <li>
-                  <a href="./search-house.html" class="link">Забронювати</a>
-                </li>
-                <li><a href="./contacts.html" class="link">Контакти</a></li>
-                <li>
-                  <a href="" class="link">Особистий<br />кабінет</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-        <main>
-          <section class="page-header page-header-contact">
-            <div class="container">
-              <h1 class="page-title">Бронювання будиночка в Карпатах</h1>
+    <header>
+      <div class="container container-header">
+        <nav class="nav">
+          <img
+            src="./images/logo.svg"
+            alt="логотип компанії"
+            width="178"
+            id="logo"
+          />
+          <ul class="site-nav list">
+            <li><a href="./index.html" class="link">Головна</a></li>
+            <li><a href="./about-us.html" class="link">Про нас</a></li>
+            <li><a href="./search-house.html" class="link">Забронювати</a></li>
+            <li><a href="./contacts.html" class="link">Контакти</a></li>
+            <li>
+              <a href="" class="link">Особистий<br />кабінет</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-title">Бронювання будиночка в Карпатах </h1>
+        </div>
+      </section>
+      <div class="container">
+        <section class='house'>
+          <h2 class="visually-hidden">Детальний опис будинку</h2>
+         <div class="house-group-1">
+           <img src="./images/photo-house-1.jpg" alt="photo-house-1" width="611">
+          <img src="./images/photo-house-2.jpg" alt="photo-house-2" width="611">
+         </div>
+         <div class="house-group-2">
+           <img src="./images/photo-house-3.jpg" alt="photo-house-3" width="430px">
+          <img src="./images/photo-house-4.jpg" alt="photo-house-4" width="410px">
+         </div>
+          <div class="about-us-description house-description-group">
+          <p >Затишні дерев’яні будиночки, які заховались на окраїні лісу зустрічатимуть Вас чудовим краєвидом на ранкові полонини.</p>
+            <p>Ви можете обрати кількість кімнат та місце, яке буде ідеальним для Вас. Територія, на якій базуються будиночки, підійде як і для великих компаній, яким потрібно бути поряд у декількох будинках, так і для пар, які хочуть бути на одинці.</p>
             </div>
-          </section>
-        </main>
-      </body>
+        </section>
+      </div>
+      <div class="container">
+        <section class="booking">
+          <h2 class="booking-title">Наявність місць</h2>
+            <form class="booking__form">
+  <p class="booking-description">
+    Коли б Ви хотіли зупинитись в помешканні «Полонини Карпат»?
+  </p>
+
+   <div class="form-date">
+     <!-- Дата заїзду -->
+    <div class="booking__field">
+      <label for="checkin">Дата заїзду</label>
+      <input type="date" id="checkin" name="checkin">
+    </div>
+
+    <!-- Дата виїзду -->
+    <div class="booking__field">
+      <label for="checkout">Дата виїзду</label>
+      <input type="date" id="checkout" name="checkout">
+    </div>
+   </div>
+
+    <!-- Номери -->
+  <div class="form-cout">
+      <div class="booking__field">
+      <label for="rooms">Номери</label>
+      <input type="number" id="rooms" name="rooms" min="1" value="1">
+    </div>
+
+    <!-- Дорослі -->
+    <div class="booking__field">
+      <label for="adults">Дорослі</label>
+      <input type="number" id="adults" name="adults" min="1" value="2">
+    </div>
+
+    <!-- Діти -->
+    <div class="booking__field">
+      <label for="children">Діти</label>
+      <input type="number" id="children" name="children" min="0" value="0">
+    </div>
+  </div>
+
+    <!-- Кнопка -->
+    <button type="submit" class="booking__submit">
+      Перевірити наявність вільних місць
+    </button>
+
+  </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container container-header">
+        <p class="copyright">&copy 2025 HolidayTime. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
     </html>
   </body>
 </html>
